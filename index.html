@@ -6,27 +6,26 @@
         <link rel="stylesheet" href="./css/style.css">
         <script src="./js/jquery-3.4.1.min.js"></script>
         <script src="./js/index.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div id="header">
             <h1>Перевод систем счисления</h1>
-        
         </div>
-        <div id="main">
-            <div id="inputDiv">
-                <p>Числа должны состоять из чисел и/или букв латинского алфавита (любого регистра).<br/>
-                Десятичные из 0-9, двоичные из 0 и 1, шестнадцатиричные из 0-9 и A-F. 
+        <div id="main" class="column">
+            <div id="inputDiv" class="column">
+                <p>Число должно быть положительным и состоять из чисел и/или букв латинского алфавита (любого регистра).<br/>
+                Десятичные числа состоят из 0-9, двоичные - из 0 и 1, шестнадцатиричные - из 0-9 и A-F. 
                 </p>
-                <p>Число: 
-                <input id="inputNum" type="text" title="Число" value="2020"/></p>
-                <p>Из 
-                <input id="inputFrom" type="text" title="Из системы" value="10"/><span>-ной</span></p>
-                <p>В 
-                <input id="inputTo" type="text" title="В систему" value="2"/><span>-ную</span></p>
+                <p id="inputP">Перевести  
+                <input id="inputNum" type="text" title="Число" value=""/> из
+                <input id="inputFrom" type="text" title="Из системы" value=""/><span>-ной</span> в
+                <input id="inputTo" type="text" title="В систему" value=""/><span>-ную</span></p>
                 <input type="button" value="Перевести" onclick="convert()"/>
             </div>
-            <div id="outputDiv">
-                <p>Вывод: <span id="outputNum"></span></p>
+            <div id="outputDiv" class="row start">
+                <p id="outputNum" class="invisible">Ответ: <span></span></p>
+                <p id="outputError" class="invisible">Ошибка: <span></span></p>
             </div>
         </div>
     </body>

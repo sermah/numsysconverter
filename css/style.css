@@ -1,3 +1,102 @@
 body{
     margin: 0;
+    padding: 8px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+
+    color: #202020;
+}
+
+body *{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#main, #header{
+    max-width: 500pt;
+}
+
+#outputDiv, #inputP{
+    color: #111;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#outputNum span{
+    font-weight: 400;
+}
+
+#inputFrom, #inputTo{
+    width: 40px;
+    text-align: right;
+}
+
+h1{
+    color: #000;
+}
+
+div{
+    display: flex;
+}
+
+div.column{
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+div.column.left{
+    align-items: left;
+}
+
+div.row{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: top;
+    justify-content: center;
+}
+
+div.row.start{
+    justify-content: flex-start;
+}
+
+
+.invisible{
+    display: none;
+}
+
+input[type="text"]{
+    appearance: none;
+    border: none;
+    border-bottom: 1px solid #dadada;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+input[type="text"]:focus{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #202020;
+}
+
+input[type="button"]{
+    transition: color 0.2s, background-color 0.2s;
+    color: rgb(122, 20, 240);
+    background: none;
+    appearance: none;
+    margin: 4px;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+input[type="button"]:focus, input[type="button"]:hover{
+    background-color: #0002;
+    cursor: pointer;
+}
+
+input[type="button"]:active{
+    color: rgb(56, 9, 109);
 }
