@@ -3,6 +3,7 @@
 <html>
     <head>
         <title>Перевод систем счисления</title>
+        <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
         <link rel="stylesheet" href="./css/style.css">
         <script src="./js/jquery-3.4.1.min.js"></script>
         <script src="./js/index.js"></script>
@@ -17,10 +18,10 @@
                 <p>Число должно быть положительным и состоять из чисел и/или букв латинского алфавита (любого регистра).<br/>
                 Десятичные числа состоят из 0-9, двоичные - из 0 и 1, шестнадцатиричные - из 0-9 и A-F. 
                 </p>
-                <p id="inputP">Перевести  
-                <input id="inputNum" type="text" title="Число" value=""/> из
-                <input id="inputFrom" type="text" title="Из системы" value=""/><span>-ной</span> в
-                <input id="inputTo" type="text" title="В систему" value=""/><span>-ную</span></p>
+                <p id="inputP">
+                <span>Перевести <input id="inputNum" type="text" title="Число" value=""/></span> 
+                <span>из <input id="inputFrom" type="text" title="Из системы" value=""/>-ной 
+                в <input id="inputTo" type="text" title="В систему" value=""/>-ную</span></p>
                 <input type="button" value="Перевести" onclick="convert()"/>
             </div>
             <div id="outputDiv" class="row start">
