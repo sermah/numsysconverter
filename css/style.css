@@ -18,6 +18,13 @@ body *{
     max-width: 500pt;
 }
 
+#author{
+    color: #4d4d4d;
+    font-size: 14px;
+    padding: 0;
+    margin: 0 0 4px;
+}
+
 #outputDiv, #inputP{
     color: #111;
     font-weight: 600;
@@ -46,6 +53,7 @@ body *{
 
 h1{
     color: #000;
+    margin: 16px 0 4px;
 }
 
 div{
@@ -99,7 +107,7 @@ input[type="text"]:focus{
 input[type="button"]{
     transition: color 0.2s, background-color 0.2s, box-shadow 0.2s;
     color: #7a14f0;
-    box-shadow: 0 2pt 4pt 0 #0004;
+    box-shadow: 0 2pt 3pt 0 #0003;
     background: none;
     appearance: none;
     border: 1pt solid #dadada;
